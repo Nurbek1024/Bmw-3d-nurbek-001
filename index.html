@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRO 3D BMW Racing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="score">Score: 0</div>
+<div id="highScore">Record: 0</div>
+
+<div id="gameOver">
+  GAME OVER <br>
+  <button onclick="restart()">Restart</button>
+</div>
+
+<!-- Telefon tugmalari -->
+<div class="controls">
+  <button ontouchstart="moveLeft()">⬅</button>
+  <button ontouchstart="moveRight()">➡</button>
+  <button ontouchstart="boost()">🚀</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
